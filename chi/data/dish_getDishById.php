@@ -1,22 +1,22 @@
 <?php
 header('Content-type:application/json');
 
-/*èŽ·å–å®¢æˆ·ç«¯é¡µé¢ä¼ æ¥çš„å‚æ•°*/
+/*»ñÈ¡¿Í»§¶ËÒ³Ãæ´«À´µÄ²ÎÊý*/
 @$id = $_REQUEST['id'];
-if(empty($id)) //åˆ¤æ–­å‚æ•°
+if(empty($id)) //ÅÐ¶Ï²ÎÊý
 {
     echo '[]';
     return;
 }
 
-//æ ¹æ® id å‚æ•°çš„æ•°æ®æŸ¥è¯¢
+//¸ù¾Ý id ²ÎÊýµÄÊý¾Ý²éÑ¯
 $conn = mysqli_connect('127.0.0.1','root','','kaifanla');
 $sql = 'set names utf8';
 mysqli_query($conn,$sql);
-$sql = "select * from kf_dish where did=$id";
+$sql = 'select * from kf_dish where did=$id';
 $result = mysqli_query($conn,$sql);
 
-//åˆ†æžç»“æžœï¼Œè¿”å›žjsonæ•°ç»„ä¸²
+//·ÖÎö½á¹û£¬·µ»ØjsonÊý×é´®
 $row = mysqli_fetch_assoc($result);
 if(empty($row))
     echo '[]';

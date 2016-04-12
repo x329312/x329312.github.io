@@ -8,14 +8,14 @@
     </div>
     <!--菜单栏-->
     <div class="list-group">
-        <a href="#/detail/{{dish.did}}" class="list-group-item" ng-repeat="dish in dishArray">
+        <a href="#/detail" class="list-group-item" ng-repeat="dish in dishArray">
             <div class="media">
                 <div class="media-left media-middle">
                     <img ng-src="img/{{dish.img_sm}}" alt=""/>
                 </div>
                 <div class="media-body">
                     <h4>{{dish.name}}</h4>
-                    <p>主要食料：{{dish.material}}</p>
+                    <p>主要食料：{{dish.detail}}</p>
                     <hr/>
                     <span class="money">{{dish.price|currency:"￥"}}</span>
                 </div>
@@ -25,7 +25,7 @@
 
 
     <!--按钮-->
-    <button class="btn btn-block btn-success" ng-click="loadMore()" ng-show="isHasMore">加载更多</button>
+    <button class="btn btn-block btn-success" ng-click="loadMore()">加载更多</button>
     <div class="alert alert-danger" ng-hide="isHasMore">
         <h5><span class="glyphicon glyphicon-alert"></span>  没有更多数据啦！</h5>
     </div>

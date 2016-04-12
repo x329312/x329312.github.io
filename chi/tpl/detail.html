@@ -6,26 +6,26 @@
     </ol>
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h4>{{dish.name}}</h4>
+            <h4>【酸甜开胃虾】</h4>
         </div>
         <div class="panel-body">
             <!--<img src="img/p0281-l.jpg" class="img-responsive" alt=""/>-->
             <div class="media">
                 <div class="media-middle">
-                    <img src="img/{{dish.img_lg}}" class="img-responsive" alt=""/>
+                    <img src="img/p0281-l.jpg" class="img-responsive" alt=""/>
                 </div>
                 <div class="media-body">
                     <br/>
-                    <p><b>主要食料：</b>{{dish.material}}</p>
-                    <p>{{dish.detail}}</p>
+                    <p><b>主要食料：</b>明虾、番茄酱、白糖、白醋、葱、姜、淀粉等</p>
+                    <p>话说有两个地方是我挪不动脚的，一个是图书馆，另外一个便是菜市场！ 每周有七天，留给自己的时间却很少。既要带儿子去上早教课，又要陪女儿上兴趣班，还要留一个半天带孩子们泡图书馆！ 有时真的觉得妈妈是这个世界上最伟大的职业，累，并快乐着！ 这个时节正是各类果蔬大量上市的时候，拖着买菜专用的小拉车，徜徉在人声鼎沸的菜市场，从海鲜区、肉类区再慢慢逛到我最喜爱的果蔬区，感受季节的变换带给人们餐桌上的喜悦………… </p>
                     <hr/>
-                    <span class="money"><b>{{dish.price|currency:"￥"}}</b></span>
+                    <span class="money"><b>￥36.00</b></span>
                 </div>
             </div>
         </div>
         <div class="panel-footer text-right">
-            <a class="btn btn-success" ng-click="jump('/createOrder/' + dish.did)">我要订餐</a>
-            <a href="#/main" class="btn btn-warning">看看其他</a>
+            <a href="#/createOrder" class="btn btn-success">我要订餐</a>
+            <a href="#/main" class="btn btn-warning">我再看看</a>
         </div>
     </div>
 </div>
