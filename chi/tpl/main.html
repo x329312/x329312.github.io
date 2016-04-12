@@ -1,0 +1,33 @@
+<div ng-include="'tpl/include/header.html'"></div>
+<div class="container">
+    <!--搜索栏-->
+    <div class="form-group has-feedback">
+        <label class="sr-only" for="search">搜索</label>
+        <input class="form-control" type="text" id="search" ng-model="kw" placeholder="搜索菜品和原料..."/>
+        <span class="glyphicon glyphicon-search form-control-feedback text-success" aria-hidden="true"></span>
+    </div>
+    <!--菜单栏-->
+    <div class="list-group">
+        <a href="#/detail/{{dish.did}}" class="list-group-item" ng-repeat="dish in dishArray">
+            <div class="media">
+                <div class="media-left media-middle">
+                    <img ng-src="img/{{dish.img_sm}}" alt=""/>
+                </div>
+                <div class="media-body">
+                    <h4>{{dish.name}}</h4>
+                    <p>主要食料：{{dish.material}}</p>
+                    <hr/>
+                    <span class="money">{{dish.price|currency:"￥"}}</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <!--按钮-->
+    <button class="btn btn-block btn-success" ng-click="loadMore()" ng-show="isHasMore">加载更多</button>
+    <div class="alert alert-danger" ng-hide="isHasMore">
+        <h5><span class="glyphicon glyphicon-alert"></span>  没有更多数据啦！</h5>
+    </div>
+</div>
+<div ng-include="'tpl/include/footer.html'"></div>

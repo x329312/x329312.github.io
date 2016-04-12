@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="cModule">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>惊鸿一面</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <style>
+        body{
+            overflow-x: hidden;
+            clear: both;
+        }
+        .page{
+            transition: all 0.5s linear;
+            position: absolute;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+        .page.ng-leave{left:0;opacity: 1;}
+        .page.ng-leave.ng-leave-active{left:-100%;opacity: 0;}
+        .page.ng-enter{left:100%;opacity: 0;}
+        .page.ng-enter.ng-enter-active{left:0;  opacity: 1;}
+    </style>
+</head>
+<body ng-controller="parentCtr">
+<div ng-view class="page">
+
+</div>
+
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.3.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+
+<script src="js/angular.js"></script>
+<script src="js/angular-route.js"></script>
+<script src="js/angular-animate.js"></script>
+<script src="js/index.js"></script>
+</html>

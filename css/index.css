@@ -1,0 +1,139 @@
+a{
+    outline: none;
+}
+.topdex{
+    margin-bottom: 0;
+    z-index:10;
+    background: rgba(248, 248, 248, 0);
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-family: 微软雅黑;
+    position: fixed ;
+    width:100%;
+    transition:all 0.3s linear;
+    height: 70px;
+    padding-top: 10px;
+}
+.bottomdex{
+    z-index:1;
+}
+.notonepage{
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.page1 {
+    background-color: #fff;
+}
+
+.page2 {
+    background-color: #f3f3f3;/*#4BBFC3*/
+}
+
+.page3 {
+    background-color: #FF7F50;
+}
+
+.page4 {
+    background-color: #1bbc9b;
+}
+
+p.title {
+    position: relative;
+    top: 35%;
+    font: 700 40px "Microsoft Yahei";
+    color: #fff;
+    text-align: center;
+}
+#myc>ul>li>a{
+    color: #f8f8f8;
+    cursor:pointer;
+    border-radius: 50%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+#myc>ul>li>a:hover{
+    background: rgba(231, 231, 231, 0.20);
+}
+#firsta{
+    background: rgba(231, 231, 231, 0.35);
+}
+#nomologo{
+    font-family: 'Clicker Script', cursive;
+    color: #f8f8f8;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+#hanbao>span{
+    background: #f8f8f8;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background: rgba(0,0,0,0);
+}
+.lunbo{
+    margin-top:70px;
+}
+.carousel-indicators .active{
+    background: #4bbfc3;
+}
+.carousel-indicators li{
+    border: 1px solid #4bbfc3;
+}
+.zhanshi{
+    font-family: "microsoft yahei";
+    color: #777;
+    margin-top: 1em;
+}
+.zhanshi p{
+    font-size: 16px;
+}
+.zhanshi h2{
+    margin-top: 0;
+}
+.game{
+    background: #4bbfc3;
+    margin-top: 3em;
+    height: 50%;
+    box-shadow:0px 10px 15px rgba(0,0,0,0.1) inset;
+    padding-top: 2.2em;
+}
+.game .container .row .col-xs-3{
+    margin-left: 5em;
+}
+.game .container .row .col-xs-3 a{
+    outline: none;
+}
+.game .container .row .col-xs-3 a img{
+    width: 125px;
+    height: 125px;
+}
+.game .container .row .col-xs-3 a img:hover{
+    width: 140px;
+    height: 140px;
+}
+.modal-body{
+    padding-top:0;
+
+}
+.carousel-indicators{
+    bottom: 10px;
+}
+iframe{
+    border: 2px solid #ddd;
+}
+.chiwidth{
+    width: 430px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .topdex{ position: absolute ; }
+}
+@media screen and (min-width: 1500px){
+    .zhanshi{ margin-top: 3em; }
+    .game{ padding-top: 5em; }
+    .lunbo{ margin-top:120px; }
+}

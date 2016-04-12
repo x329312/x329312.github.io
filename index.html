@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>isNomo</title>
+    <link rel="icon" href="img/no2.ico">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/onepage-scroll.css"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <link rel="stylesheet" href="css/2048.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <!--JS引入-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.onepage-scroll.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+
+<div class="navbar navbar-default topdex hidden-sm">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" id="nomologo">isNomo</a>
+            <a href="#myc" id="hanbao" class="navbar-toggle" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+        <div class="navbar-collapse navbar-right collapse" id="myc">
+            <ul class="nav navbar-nav">
+                <li class="active"><a id="firsta" class="nava">主页</a></li>
+                <li><a href="http://isnomo.github.io" target="_blank" class="nava">博客</a></li>
+                <li><a class="nava" id="in2">作品</a></li>
+                <li><a class="nava" id="in3">资源</a></li>
+                <li><a class="nava" id="in4">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main bottomdex">
+    <div class="page page1">
+        <div class="demo-2">
+            <div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <a href="http://isnomo.github.io" title="进入博客">
+                        <h1 class="main-title" style="display: none;"><span>Nomo</span></h1>
+                    </a>
+                </div>
+            </div>
+        </div><!-- /container -->
+        <script src="js/rAF.js"></script>
+        <script src="js/demo-2.js"></script>
+    </div>
+
+    <div class="page page2">
+        <div class="container">
+            <div id="my-ad2" class="carousel slide lunbo" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="Intel/intel.html" target="_blank"><img src="img/1111.png" alt=""/></a>
+                    </div>
+                    <div class="item">
+                        <a href="jd/jd_index.html" target="_blank"><img src="img/2222.png" alt=""/></a>
+                    </div>
+                    <div class="item">
+                        <a href="#modal4" id="modala4"><img src="img/3333.png" alt=""/></a>
+                    </div>
+                </div>
+                <!--圆点不随页面滚动-->
+                <ul class="carousel-indicators">
+                    <li data-slide-to="0" data-target="#my-ad2"  class="active text-primary"></li>
+                    <li data-slide-to="1" data-target="#my-ad2"></li>
+                    <li data-slide-to="2" data-target="#my-ad2"></li>
+                </ul>
+            </div>
+            <!--作品展示-->
+            <div class="zhanshi text-center">
+                <h2>作品展示</h2>
+                <p>不忘初心，一切的一切源于热爱这一切</p>
+                <p>回溯最初，愿最真挚的情感能在简洁的代码中传递...</p>
+            </div>
+        </div>
+        <!--小游戏-->
+        <div class="container-fluid game">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-3 text-center">
+                        <a  href="#modal1" id="modala1"><img src="img/01.png" alt=""></a>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <a href="#modal2" id="modala2"><img src="img/03.png" alt=""></a>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <a href="#modal3" id="modala3"><img src="img/02.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page page3">
+        <p class="title">第三屏</p>
+    </div>
+    <div class="page page4">
+        <p class="title">第四屏</p>
+    </div>
+
+</div>
+<!--2048-->
+<div class="modal fade" id="modal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" data-dismiss="modal">&times;</span>
+                <h3 class="modal-title">2048游戏(使用 ↑↓←→ 来移动方块)</h3>
+            </div>
+            <div class="modal-body">
+                <div id="p_1">分数：
+                    <span id="score">0</span>
+                    本次最高分：
+                    <span id="gfscore">0</span>
+                </div>
+                <div id="gridPanel">
+                </div>
+                <div id="gameOver">
+                    <div><!--背景div--></div>
+                    <p><!--前景框-->
+                        Game Over!<br>
+                        分数：<span id="finalScore"></span><br>
+                        本次最高分：<span id="zfinalScore"></span><br>
+                        <a class="btn btn-success" onclick="game.start()">再玩一次！</a>
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal" onclick="game.start()" class="btn btn-danger btn-block">离开游戏</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--&lt;!&ndash;俄罗斯方块&ndash;&gt;-->
+<!--<div class="modal fade" id="modal2">-->
+    <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<span class="close" data-dismiss="modal">&times;</span>-->
+                <!--<h3 class="modal-title">俄罗斯方块(使用 ←→ 移动，↑旋转)</h3>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!--<div id="pg" class="playground">-->
+                    <!--<p>分数:<span id="score">0</span></p>-->
+                    <!--<p>消除行:<span id="lines">0</span></p>-->
+                    <!--<p>等级:<span id="level">1</span></p>-->
+                <!--</div>-->
+                <!--<p>-->
+                    <!--<a href="" class="btn btn-warning" onclick="skin1()">皮肤1</a>-->
+                    <!--<a href="" class="btn btn-primary" onclick="skin2()">皮肤2</a>-->
+                    <!--<a href="" class="btn btn-success" onclick="skin3()">皮肤3</a>-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--<a href="#" data-dismiss="modal" class="btn btn-danger btn-block">离开游戏</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--飞机大战-->
+<div class="modal fade" id="modal2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" data-dismiss="modal">&times;</span>
+                <h3 class="modal-title">飞机大战(移动鼠标来控制飞机)</h3>
+            </div>
+            <div class="modal-body">
+                <div style="margin:0 auto;width:480px; height:650px;background:#323232; text-align:center;vertical-align:middle">
+                    <!-- 定义<canvas>元素 - 完成游戏功能 -->
+                    <canvas id="canvas" width="480px" height="650px"></canvas>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal" class="btn btn-danger btn-block">离开游戏</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--手机订餐-->
+<div class="modal fade" id="modal4">
+    <div class="modal-dialog chiwidth">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" data-dismiss="modal">&times;</span>
+                <h3 class="modal-title">手机订餐网页</h3>
+            </div>
+            <div class="modal-body">
+                <iframe src="chi/index.html" width="400" height="700"></iframe>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal" class="btn btn-danger btn-block">离开页面</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/2048.min.js"></script>
+
+<script src = "plane.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script>
+//    (function () {
+//        var s = document.createElement("script");
+//        s.onload = function () {
+//            bootlint.showLintReportForCurrentDocument([]);
+//        };
+//        s.src = "js/bootlint.js";
+//        document.body.appendChild(s)
+//    })();
+setTimeout(function(){
+    $("h1").fadeIn(3000);
+},2000);
+//换皮肤
+//function skin1(){
+//    $("pg").style.backgroundImage="url(img/tetris.png)";
+//}
+//function skin2(){
+//    $("pg").style.backgroundImage="url(img/tetris1.png)";
+//}
+//function skin3(){
+//    $("pg").style.backgroundImage="url(img/tetris2.png)";
+//}
+</script>
+</body>
+</html>

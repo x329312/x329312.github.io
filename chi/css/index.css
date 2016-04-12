@@ -1,0 +1,45 @@
+body{
+    font-family: "Microsoft yahei";
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+hr{
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.start{
+    margin-top: 5em;
+    cursor:pointer;
+}
+.start h1{
+    font-size: 5em;
+}
+.start img{
+    width: 100%;
+}
+.buttomnav .col-xs-4{
+    text-align: center;
+    line-height: 50px;
+}
+.buttomnav .col-xs-4 a{
+    color: #707175;
+}
+.buttomnav .col-xs-4 a:hover{
+    color: #347ab6;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background: transparent;
+}
+.money{
+    color: #ff5958;
+}
+.alert{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.breadcrumb,.marb{
+    margin-bottom: 0;
+}
+
+

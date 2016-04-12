@@ -1,0 +1,32 @@
+<div ng-include="'tpl/include/header.html'"></div>
+<div class="container">
+    <ol class="breadcrumb marb">
+        <li><a href="#/main">首页</a></li>
+        <li class="active">详情</li>
+    </ol>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4>{{dish.name}}</h4>
+        </div>
+        <div class="panel-body">
+            <!--<img src="img/p0281-l.jpg" class="img-responsive" alt=""/>-->
+            <div class="media">
+                <div class="media-middle">
+                    <img src="img/{{dish.img_lg}}" class="img-responsive" alt=""/>
+                </div>
+                <div class="media-body">
+                    <br/>
+                    <p><b>主要食料：</b>{{dish.material}}</p>
+                    <p>{{dish.detail}}</p>
+                    <hr/>
+                    <span class="money"><b>{{dish.price|currency:"￥"}}</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer text-right">
+            <a class="btn btn-success" ng-click="jump('/createOrder/' + dish.did)">我要订餐</a>
+            <a href="#/main" class="btn btn-warning">看看其他</a>
+        </div>
+    </div>
+</div>
+<div ng-include="'tpl/include/footer.html'"></div>
