@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>俄罗斯方块 — 经典版V10</title>
+        <link rel="stylesheet" href="css/tetris.css"/>
+		<script src="js/shapes.js"></script>
+		<script src="js/tetris.js"></script>
+		<style>
+			p{
+				display:block;
+				width:auto;
+				text-align:center;
+			}
+			p a{
+				display:inline-block;
+				width:60px;
+				height:25px;
+				border:1px solid #555;
+				line-height:25px;
+				text-decoration:none;
+				color:#333;
+			}
+			p a:first-child:hover{
+				background-color:#D088CD;
+				color:#fff;
+			}
+			p a:first-child+a:hover{
+				background-color:#679;
+				color:#fff;
+			}
+			p a:last-child:hover{
+				background-color:#76A583;
+				color:#fff;
+			}
+		</style>
+    </head>
+    <body>
+		<div id="pg" class="playground">
+            <p>分数:<span id="score">0</span></p>
+            <p>消除行:<span id="lines">0</span></p>
+            <p>等级:<span id="level">1</span></p>
+        </div>
+    </body>
+</html>

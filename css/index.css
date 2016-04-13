@@ -91,24 +91,23 @@ p.title {
 }
 .game{
     background: #4bbfc3;
-    margin-top: 3em;
+    margin-top: 2em;
     height: 50%;
     box-shadow:0px 10px 15px rgba(0,0,0,0.1) inset;
     padding-top: 2.2em;
 }
-.game .container .row .col-xs-3{
-    margin-left: 5em;
+.game .container .row .col-xs-4{
+    /*margin-left: 5em;*/
+    padding-left: 8em;
 }
-.game .container .row .col-xs-3 a{
+.game .container .row .col-xs-4 a{
     outline: none;
 }
-.game .container .row .col-xs-3 a img{
-    width: 125px;
-    height: 125px;
+.game .container .row .col-xs-4 a img{
+    width: 120px;
 }
-.game .container .row .col-xs-3 a img:hover{
-    width: 140px;
-    height: 140px;
+.game .container .row .col-xs-4 a img:hover{
+    width: 130px;
 }
 .modal-body{
     padding-top:0;
@@ -123,17 +122,62 @@ iframe{
 .chiwidth{
     width: 430px;
 }
-
-
-
-
-
-
-@media screen and (max-width: 767px) {
-    .topdex{ position: absolute ; }
+#my-ad2 .carousel-inner .item a{
+    outline: none;
 }
+#modal3 .modal-dialog .modal-content .modal-body iframe{
+    border: 0;
+}
+
+
+
+
+
+
+
+/*小于767px的手机*/
+@media screen and (max-width: 767px) {
+    #myc>ul>li>a{ border-radius: 0%; }
+    .game .container .row .col-xs-4{ margin-left: 0;}
+
+    .zhanshi{ margin-top: 3em; }
+    .game{ padding-top: 3em;}
+    .game .container .row .col-xs-4{
+        padding-left: 2em;
+    }
+    .padtext{
+        padding-top: 1em;
+        font-family: "microsoft yahei";
+        color: #fff;
+    }
+}
+/*大于768 小于 991 的平板电脑*/
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .zhanshi{ margin-top: 8em; }
+    .game{ padding-top: 5em; margin-top: 5em;}
+    .game .container .row .col-xs-4{
+        padding-left: 4em;
+    }
+    .padtext{
+        padding-top: 3em;
+        font-family: "microsoft yahei";
+        color: #fff;
+    }
+}
+/*小于1499px的中型电脑*/
+@media screen and (max-width: 1200px) and (min-width: 992px){
+    .zhanshi{ margin-top: 3em; }
+    .game{ padding-top: 3em; margin-top: 3em;}
+}
+/*小于1499px的中型电脑*/
+@media screen and (max-width: 1499px) and (min-width: 1199px) {
+    .modal-dialog{margin: 2px auto;}
+    .game{ padding-top: 2em; margin-top: 2em;}
+}
+/*大于1500px的大屏电脑*/
 @media screen and (min-width: 1500px){
     .zhanshi{ margin-top: 3em; }
-    .game{ padding-top: 5em; }
+    .game{ padding-top: 5em;margin-top: 5em; }
     .lunbo{ margin-top:120px; }
+
 }
