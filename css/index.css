@@ -167,15 +167,42 @@ iframe{
         color: #fff;
     }
 }
-/*小于1499px的中型电脑*/
+
+
+/*小于1200px的中型电脑*/
 @media screen and (max-width: 1200px) and (min-width: 992px){
     .zhanshi{ margin-top: 3em; }
     .game{ padding-top: 3em; margin-top: 3em;}
 }
+
+/*1366笔记本*/
+@media screen and (max-width: 1367px) and (min-width: 1201px){
+    .modal-dialog{margin: 2px auto;}
+    .game{ padding-top: 1em; margin-top: 0em;}
+    .lunbo{
+        height: 300px;
+        width:auto;
+    }
+    .lunbo .carousel-inner .item{
+        padding-left: 8em;
+    }
+    .lunbo .carousel-inner .item a img{
+        height: 300px;
+        width:auto;
+    }
+    .game .container .row .col-xs-4{
+        padding-left: 10em;
+    }
+
+}
 /*小于1499px的中型电脑*/
-@media screen and (max-width: 1499px) and (min-width: 1199px) {
+@media screen and (max-width: 1499px) and (min-width: 1368px) {
     .modal-dialog{margin: 2px auto;}
     .game{ padding-top: 2em; margin-top: 2em;}
+
+    /*.game .container .row .col-xs-4{*/
+        /*padding-left: 10em;*/
+    /*}*/
 }
 /*大于1500px的大屏电脑*/
 @media screen and (min-width: 1500px){
