@@ -92,7 +92,7 @@ p.title {
 .game{
     background: #4bbfc3;
     margin-top: 2em;
-    height: 50%;
+    height: 20em;
     box-shadow:0px 10px 15px rgba(0,0,0,0.1) inset;
     padding-top: 2.2em;
 }
@@ -128,6 +128,9 @@ iframe{
 #modal3 .modal-dialog .modal-content .modal-body iframe{
     border: 0;
 }
+.conpadd{
+    padding:0;
+}
 
 
 
@@ -154,7 +157,7 @@ iframe{
 /*大于768 小于 991 的平板电脑*/
 @media screen and (max-width: 991px) and (min-width: 768px){
     .zhanshi{ margin-top: 8em; }
-    .game{ padding-top: 5em; margin-top: 5em;}
+    .game{ padding-top: 5em; margin-top: 5em; height: 30em;}
     .game .container .row .col-xs-4{
         padding-left: 4em;
     }
