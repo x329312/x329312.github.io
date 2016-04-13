@@ -201,7 +201,7 @@ div.sub_cate_box {
 }
 /*展示项*/
 #show_box>ul>li {
-	width:297px;
+	width:295px;
 	height:190px;
 	overflow:hidden;
 	float:left;
@@ -216,20 +216,20 @@ div.sub_cate_box {
     background-color:#fff;
     opacity:0.8;
     width:45%;
-	height:190px;	
-	height:100%;
+	height:190px;
+	/*height:100%;*/
 	display:block;
 	position:relative;
 	z-index:100;
 }
 /*遮罩上一层的文本*/
-#show_box>ul>li>div {    
+#show_box>ul>li>div {
     padding:20px;
     margin-top:10px;
     position:absolute;
     top:0px;
     left:0px;
-    z-index:200;    
+    z-index:200;
     color:#333;
 }
 #show_box>ul>li>div>h3 {
@@ -367,6 +367,7 @@ div.floor {
 	width:100%;
 	height:404px;
 	margin-bottom:10px;
+	clear:both;
 }
 div.floor>header {
 	height:40px;
