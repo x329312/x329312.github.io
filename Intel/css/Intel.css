@@ -6829,6 +6829,13 @@ button.close {
   margin-left: 1.2em;
   margin-top: 1.6em;
 }
+
+
+
+
+
+
+
 /*1200px分辨率下*/
 @media screen and (min-width: 1200px) {
   .rowpd {
@@ -6886,4 +6893,62 @@ button.close {
   .ulb {
     line-height: 2.5em;
   }
+}
+
+.bigtext1{
+  width: 48em;
+  color: #fff;
+  position: absolute;
+  left: 4em;
+  top: 17em;
+
+}
+.bigtext1 h1,.bigtext1 p{
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.bigtext1 a{
+  background: #00aeed;
+  width: 30em;
+  transition:all 0.3s linear;
+}
+.bigtext1 a:hover{
+  background: #2BC7FF;
+  border-color: #2BC7FF;
+}
+
+.bigtext2{
+  width: 48em;
+  color: #fff;
+  position: absolute;
+  left: 4em;
+  top: 18em;
+
+}
+.bigtext2 h1,.bigtext2 p{
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.bigtext2 a{
+  background: #00aeed;
+  width: 16em;
+  transition:all 0.3s linear;
+}
+.bigtext2 a:hover{
+  background: #2BC7FF;
+  border-color: #2BC7FF;
+}
+.stext{
+  height: 3em;
+  width: 92.5%;
+  color: #fff;
+  position: absolute;
+  background: rgba(0, 0, 0,0.6);
+  top: 11.5em;
+  padding: 9px;
+}
+.stext p {
+  font-size: 15px;
+}
+.stext p span{
+  float: right;
+  padding-top: 4px;
 }

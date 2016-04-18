@@ -345,4 +345,5 @@ var tetris={
 }
 window.onload=function(){
 	tetris.start();
+	tetris.pause();
 }
