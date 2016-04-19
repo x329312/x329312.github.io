@@ -6836,64 +6836,7 @@ button.close {
 
 
 
-/*1200px分辨率下*/
-@media screen and (min-width: 1200px) {
-  .rowpd {
-    padding-top: 15px;
-  }
-  .coldiv {
-    height: 202px;
-  }
-  .ula,
-  .ulb {
-    line-height: 2.4em;
-  }
-}
-/*大于992px，小于1199分辨率下*/
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .rowpd {
-    padding-top: 15px;
-  }
-  .coldiv {
-    height: 165px;
-  }
-  .ula,
-  .ulb {
-    line-height: 2em;
-  }
-}
-/*大于768px，小于991分辨率下*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .col-sm-6,
-  .col-md-8,
-  .col-sm-12 {
-    padding-top: 15px;
-  }
-  .col-md-8,
-  .col-sm-12 {
-    padding-bottom: 15px;
-  }
-  .coldiv {
-    height: 194px;
-  }
-  .ula,
-  .ulb {
-    line-height: 2.4em;
-  }
-}
-/*小于767分辨率下*/
-@media screen and (max-width: 767px) {
-  .col-md-8 {
-    padding-bottom: 15px;
-  }
-  .coldiv {
-    height: 205px;
-  }
-  .ula,
-  .ulb {
-    line-height: 2.5em;
-  }
-}
+
 
 .bigtext1{
   width: 48em;
@@ -6951,4 +6894,95 @@ button.close {
 .stext p span{
   float: right;
   padding-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*1200px分辨率下*/
+@media screen and (min-width: 1200px) {
+  .rowpd {
+    padding-top: 15px;
+  }
+  .coldiv {
+    height: 202px;
+  }
+  .ula,
+  .ulb {
+    line-height: 2.4em;
+  }
+}
+/*大于992px，小于1199分辨率下*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .rowpd {
+    padding-top: 15px;
+  }
+  .coldiv {
+    height: 165px;
+  }
+  .ula,
+  .ulb {
+    line-height: 2em;
+  }
+}
+/*大于768px，小于991分辨率下*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .col-sm-6,
+  .col-md-8,
+  .col-sm-12 {
+    padding-top: 15px;
+  }
+  .col-md-8,
+  .col-sm-12 {
+    padding-bottom: 15px;
+  }
+  .coldiv {
+    height: 194px;
+  }
+  .ula,
+  .ulb {
+    line-height: 2.4em;
+  }
+  .bigtext1{width: 45em;}
+  .stext{top: 12em;}
+}
+@media screen and (width: 1024px){
+  .bigtext1{width: 38em;
+    left: 4em;
+    top: 12em;}
+  .bigtext2{width: 38em;
+    left: 3em;
+    top: 11em;}
+  .stext{top: 9em;
+    width: 92%;}
+}
+/*小于767分辨率下*/
+@media screen and (max-width: 767px) {
+  .col-md-8 {
+    padding-bottom: 15px;
+  }
+  .coldiv {
+    height: 205px;
+  }
+  .ula,
+  .ulb {
+    line-height: 2.5em;
+  }
+  .stext{
+    width: 100%;
+    position: static;}
 }
