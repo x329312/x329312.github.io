@@ -272,19 +272,19 @@ iframe{
 
 }
 /*高度768的*/
-@media screen and (max-height: 769px) and (min-width: 720px){
-    .lunbo{
-        height: 18em;
-        width:auto;
-    }
-    .lunbo .carousel-inner .item{
-        padding-left: 10em;
-    }
-    .lunbo .carousel-inner .item a img{
-        height: 18em;
-        width:auto;
-    }
-}
+/*@media screen and (max-height: 769px) and (min-width: 720px){*/
+    /*.lunbo{*/
+        /*height: 18em;*/
+        /*width:auto;*/
+    /*}*/
+    /*.lunbo .carousel-inner .item{*/
+        /*padding-left: 10em;*/
+    /*}*/
+    /*.lunbo .carousel-inner .item a img{*/
+        /*height: 18em;*/
+        /*width:auto;*/
+    /*}*/
+/*}*/
 /*小于1499px的中型电脑*/
 @media screen and (max-width: 1499px) and (min-width: 1368px) {
     .modal-dialog{margin: 2px auto;}
