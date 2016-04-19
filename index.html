@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/component.css"/>
     <link rel="stylesheet" href="css/2048.css"/>
 
+    <link rel="stylesheet" type="text/css" href="css/demoClock.css">
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <!--JS引入-->
     <script src="js/jquery-1.11.3.min.js"></script>
@@ -139,10 +140,78 @@
         <p class="title">第三屏</p>
     </div>
     <div class="page page4">
-        <p class="title">第四屏</p>
+        <h1>isNomo 运行至今已经...</h1>
+        <div class="countdown countdown-container container timer">
+            <div class="clock row">
+                <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="inner">
+                            <div id="canvas-days" class="clock-canvas"></div>
+
+                            <div class="text">
+                                <p class="val">0</p>
+                                <p class="type-days type-time">天</p>
+                            </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                    </div><!-- /.wrap -->
+                </div><!-- /.clock-item -->
+
+                <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="inner">
+                            <div id="canvas-hours" class="clock-canvas"></div>
+
+                            <div class="text">
+                                <p class="val">0</p>
+                                <p class="type-hours type-time">时</p>
+                            </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                    </div><!-- /.wrap -->
+                </div><!-- /.clock-item -->
+
+                <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="inner">
+                            <div id="canvas-minutes" class="clock-canvas"></div>
+
+                            <div class="text">
+                                <p class="val">0</p>
+                                <p class="type-minutes type-time">分</p>
+                            </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                    </div><!-- /.wrap -->
+                </div><!-- /.clock-item -->
+
+                <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="inner">
+                            <div id="canvas-seconds" class="clock-canvas"></div>
+
+                            <div class="text">
+                                <p class="val">0</p>
+                                <p class="type-seconds type-time">秒</p>
+                            </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                    </div><!-- /.wrap -->
+                </div><!-- /.clock-item -->
+            </div><!-- /.clock -->
+        </div><!-- /.countdown-wrapper -->
+        <script type="text/javascript" src="js/kinetic.js"></script>
+        <script type="text/javascript" src="js/jquery.final-countdown.js"></script>
+
+        <div class="container timeBtn text-center">
+            <h5>联系方式</h5>
+            <a href="http://weibo.com/1935873681" target="_blank" class="btn btn-default">新浪微博</a>
+            <a href="https://github.com/isnomo" target="_blank" class="btn btn-default">Github</a>
+            <a href="https://twitter.com/x329312" target="_blank" class="btn btn-default">Twitter</a>
+            <a href="mailto:18511770072@163.com" target="_blank" class="btn btn-default">Email</a>
+        </div>
     </div>
 
 </div>
+
+
+<!--模态框部分-->
 <div class="hidden-sm hidden-xs">
 <!--2048-->
 <div class="modal fade" id="modal1">
@@ -247,7 +316,16 @@
 setTimeout(function(){
     $("h1").fadeIn(3000);
 },2000);
-
+    $('document').ready(function() {
+        'use strict';
+        var deta = new Date();
+        var d = deta.getTime();
+        $('.countdown').final_countdown({
+            'start': 1457712000000,
+    //            'end': 1388461320,
+            'now': d
+        });
+    });
 </script>
 </body>
 </html>

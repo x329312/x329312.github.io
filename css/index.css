@@ -34,9 +34,9 @@ a{
     background-color: #FF7F50;
 }
 
-.page4 {
-    background-color: #1bbc9b;
-}
+/*.page4 {*/
+    /*background-color: #1bbc9b;*/
+/*}*/
 
 p.title {
     position: relative;
@@ -132,7 +132,40 @@ iframe{
     padding:0;
 }
 
-
+/*第四页*/
+.page4 h1{
+    display:block;
+    margin:10% auto;
+    margin-bottom:0;
+    text-align:center;
+    font-family:"微软雅黑";
+    color:#fff;
+    font-size: 36px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);;
+}
+.timer{
+    top:25%;
+}
+.timeBtn{
+    margin: 20em auto;
+}
+.timeBtn h5{
+    margin: 2em auto;
+    font-family: "微软雅黑";
+    color: rgba(255, 255, 255, .7);
+}
+.timeBtn a,.timeBtn a:focus{
+    margin:0 1em;
+    background: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, .7);
+    border-color: rgba(255, 255, 255, .7);
+    transition:all 0.5s linear;
+}
+.timeBtn a:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(75, 191, 195);
+    border-color: rgb(75, 191, 195);
+}
 
 
 
