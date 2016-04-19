@@ -36,7 +36,7 @@ $(function () {
                     "background": "#4bbfc3",
                     "color":"#fff"
                 });
-            } else {
+            }else {
                 $(".topdex").css({
                     "background-color": "rgba(248, 248, 248, 0)",
                     "box-shadow": "1px 2px 3px rgba(0,0,0,0)"
@@ -70,6 +70,16 @@ $(function () {
                     }
                 );
             }
+        if(index == 3) {
+            $(".moblie1").css({
+                "left": "200px"
+            });
+            $(".moblie2").css({
+                "transform": "rotate(-15deg)",
+                "left": "100px"
+            });
+        }
+
         }
     });
 

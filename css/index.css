@@ -31,7 +31,7 @@ a{
 }
 
 .page3 {
-    background-color: #FF7F50;
+    background-color: #f3f3f3;/*#FF7F50;*/
 }
 
 /*.page4 {*/
@@ -131,7 +131,50 @@ iframe{
 .conpadd{
     padding:0;
 }
-
+/*第三页*/
+.bolg{
+    margin-top: 120px;
+}
+.moblie1{
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    top: 5em;
+    transition:all 1s linear;
+}
+.moblie2{
+    position: absolute;
+    transform: rotate(0deg);
+    top: 5em;
+    left: 200px;
+    transition:all 1s linear;
+}
+.ziyuan{
+    font-family: "microsoft yahei";
+    color: #777;
+    margin-top: 15em;
+}
+.ziyuan p{
+    font-size: 16px;
+}
+.ziyuan h2{
+    margin-bottom: 0.5em;
+    color: rgb(75, 191, 195);
+}
+.ziyuan a{
+    display: inline-block;
+    width: 10em;
+    margin: 1em 0;
+    background: rgba(255, 255, 255, 0);
+    color: rgba(119, 119, 119, 1);
+    border-color: rgba(119, 119, 119, .5);
+    transition:all 0.5s linear;
+}
+.ziyuan a:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(75, 191, 195);
+    border-color: rgb(75, 191, 195);
+}
 /*第四页*/
 .page4 h1{
     display:block;
@@ -147,7 +190,7 @@ iframe{
     top:25%;
 }
 .timeBtn{
-    margin: 20em auto;
+    padding: 20em;
 }
 .timeBtn h5{
     margin: 2em auto;
@@ -246,10 +289,9 @@ iframe{
 @media screen and (max-width: 1499px) and (min-width: 1368px) {
     .modal-dialog{margin: 2px auto;}
     .game{ padding-top: 2em; margin-top: 2em;}
-
-    /*.game .container .row .col-xs-4{*/
-        /*padding-left: 10em;*/
-    /*}*/
+    .timeBtn{
+        padding-top: 12em;
+    }
 }
 /*大于1500px的大屏电脑*/
 @media screen and (min-width: 1500px){
