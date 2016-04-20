@@ -287,8 +287,23 @@ iframe{
 
 /*小于1200px的中型电脑*/
 @media screen and (max-width: 1200px) and (min-width: 992px){
-    .zhanshi{ margin-top: 3em; }
-    .game{ padding-top: 3em; margin-top: 3em;}
+    .zhanshi{ margin-top: 0; }
+    .game{ padding-top: 1em; margin-top: 3em;}
+    .game .container .row .col-xs-4 a img{
+        width: 90px;
+    }
+    .game .container .row .col-xs-4 a img:hover{
+        width: 100px;
+    }
+    .moblie1,.moblie2{
+        width:50%;
+    }
+    .bolg{
+        margin-top: 3em;
+    }
+    .timeBtn{
+        padding: 4em;
+    }
 }
 
 /*1366笔记本*/
@@ -309,15 +324,22 @@ iframe{
     .game .container .row .col-xs-4{
         padding-left: 10em;
     }
+    .game .container .row .col-xs-4 a img{
+        width: 90px;
+    }
+    .game .container .row .col-xs-4 a img:hover{
+        width: 100px;
+    }
     .bolg{
-        margin-top: 2em;
+        margin-top: 4em;
     }
     .moblie1,.moblie2{
-        width: 50%;
+        width: 45%;
     }
     .timeBtn{
         padding: 4em;
     }
+    .zhanshi{ margin-top: 0; }
 }
 /*高度768的*/
 /*@media screen and (max-height: 769px) and (min-width: 720px){*/

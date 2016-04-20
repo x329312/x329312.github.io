@@ -84,7 +84,7 @@ $(function () {
                 "left": "100px"
             });
             $(".ziyuan").css({
-                "margin-left": "50%"
+                "margin-left": "45%"
             });
         }
 
