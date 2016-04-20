@@ -70,6 +70,11 @@ $(function () {
                     }
                 );
             }
+        if(index == 2) {
+            $(".game").css({
+                "margin-top": "2em"
+            });
+        }
         if(index == 3) {
             $(".moblie1").css({
                 "left": "200px"
@@ -77,6 +82,9 @@ $(function () {
             $(".moblie2").css({
                 "transform": "rotate(-15deg)",
                 "left": "100px"
+            });
+            $(".ziyuan").css({
+                "margin-left": "50%"
             });
         }
 

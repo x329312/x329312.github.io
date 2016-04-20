@@ -91,10 +91,11 @@ p.title {
 }
 .game{
     background: #4bbfc3;
-    margin-top: 2em;
+    margin-top: 19em;
     height: 20em;
     box-shadow:0px 10px 15px rgba(0,0,0,0.1) inset;
     padding-top: 2.2em;
+    transition:all 1s linear;
 }
 .game .container .row .col-xs-4{
     /*margin-left: 5em;*/
@@ -153,6 +154,9 @@ iframe{
     font-family: "microsoft yahei";
     color: #777;
     margin-top: 15em;
+    margin-left: 120%;
+    transition:all 1s linear;
+
 }
 .ziyuan p{
     font-size: 16px;
@@ -220,7 +224,7 @@ iframe{
     .game .container .row .col-xs-4{ margin-left: 0;}
 
     .zhanshi{ margin-top: 3em; }
-    .game{ padding-top: 3em;}
+    .game{ padding-top: 3em; margin-top: 0 ;}
     .game .container .row .col-xs-4{
         padding-left: 2em;
     }
@@ -228,6 +232,25 @@ iframe{
         padding-top: 1em;
         font-family: "microsoft yahei";
         color: #fff;
+    }
+    .moblie1,.moblie2{
+        width: 40%;
+    }
+    .moblie1{
+        left: 10%;
+    }
+    .moblie2{
+        left: 55%;
+    }
+    .bolg{
+        margin-top: 0;
+    }
+    .ziyuan{
+        margin-top: 98%;
+        margin-left: 0;
+    }
+    .ziyuan p{
+        font-size: 0.5em;
     }
 }
 /*大于768 小于 991 的平板电脑*/
@@ -242,6 +265,23 @@ iframe{
         font-family: "microsoft yahei";
         color: #fff;
     }
+    .moblie1,.moblie2{
+        width: 40%;
+    }
+    .moblie1{
+        left: 10%;
+    }
+    .moblie2{
+        left: 55%;
+    }
+    .bolg{
+        margin-top: 0;
+    }
+    .ziyuan{
+        margin-top: 90%;
+        margin-left: 0;
+    }
+
 }
 
 
@@ -269,7 +309,15 @@ iframe{
     .game .container .row .col-xs-4{
         padding-left: 10em;
     }
-
+    .bolg{
+        margin-top: 2em;
+    }
+    .moblie1,.moblie2{
+        width: 50%;
+    }
+    .timeBtn{
+        padding: 4em;
+    }
 }
 /*高度768的*/
 /*@media screen and (max-height: 769px) and (min-width: 720px){*/
@@ -288,15 +336,18 @@ iframe{
 /*小于1499px的中型电脑*/
 @media screen and (max-width: 1499px) and (min-width: 1368px) {
     .modal-dialog{margin: 2px auto;}
-    .game{ padding-top: 2em; margin-top: 2em;}
+    .game{ padding-top: 2em; }
     .timeBtn{
         padding-top: 12em;
+    }
+    .bolg{
+        margin-top: 5em;
     }
 }
 /*大于1500px的大屏电脑*/
 @media screen and (min-width: 1500px){
-    .zhanshi{ margin-top: 3em; }
-    .game{ padding-top: 5em;margin-top: 5em; }
+    .zhanshi{ margin-top: 3em; margin-bottom: 3em;}
+    .game{ padding-top: 5em; }
     .lunbo{ margin-top:120px; }
 
 }
