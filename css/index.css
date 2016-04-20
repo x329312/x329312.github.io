@@ -250,7 +250,7 @@ iframe{
         margin-left: 0;
     }
     .ziyuan p{
-        font-size: 0.5em;
+        font-size: 1em;
     }
 }
 /*大于768 小于 991 的平板电脑*/
@@ -261,7 +261,7 @@ iframe{
         padding-left: 4em;
     }
     .padtext{
-        padding-top: 3em;
+        padding-top: 2em;
         font-family: "microsoft yahei";
         color: #fff;
     }
