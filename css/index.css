@@ -352,8 +352,8 @@ iframe{
         margin-top: 5em;
     }
 }
-/*大于1500px的大屏电脑*/
-@media screen and (min-width: 1500px){
+/*大于1601px的大屏电脑*/
+@media screen and (min-width: 1601px){
     .zhanshi{ margin-top: 3em; margin-bottom: 3em;}
     .game{ padding-top: 5em; }
     .lunbo{ margin-top:120px; }
