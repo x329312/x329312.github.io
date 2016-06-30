@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>今天吃什么？</title>
+
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        #today{
+            font-weight: bold;
+            color: #337ab7;
+            margin-right: -1000px;
+            transition: all 0.3s linear;
+            z-index: 5;
+        }
+        #fan_sum{
+            margin-top: 20px;
+        }
+
+        #title{
+            color: #337ab7;
+            font-weight: bold;
+            font-family: "微软雅黑";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center" id="title">今天吃什么？</h1>
+        <p>请输入选择项(不必全部填写)：</p>
+        <div class="row">
+            <div class="col-md-2">
+                <input type="text" placeholder="选择项1" id="fan1" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <input type="text" placeholder="选择项2" id="fan2" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <input type="text" placeholder="选择项3" id="fan3" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <input type="text" placeholder="选择项4" id="fan4" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <input type="text" placeholder="选择项5" id="fan5" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <input type="text" placeholder="选择项6" id="fan6" class="form-control">
+            </div>
+        </div>
+
+        <p class="text-center"><a class="btn btn-success"  id="fan_sum">吃啥天注定！</a></p>
+        <h1 id="today" class="text-center"></h1>
+    </div>
+</body>
+<script>
+    $('#fan_sum').click(function(){
+        var arr=[];
+        arr.push($('#fan1').val());
+        arr.push($('#fan2').val());
+        arr.push($('#fan3').val());
+        arr.push($('#fan4').val());
+        arr.push($('#fan5').val());
+        arr.push($('#fan6').val());
+        console.log(arr);
+        for(var i = arr.length-1;i>=0;i--){
+            if(arr[i]==""){
+               arr.splice(i,1);
+            }
+        }
+        console.log(arr);
+        var lenth = arr.length;
+        var num = parseInt(Math.random()*lenth);
+        console.log(num);
+        var today = arr[num];
+        $('#today').html(today).css({"margin-right":"0px"});
+        $('#fan_sum').attr({"disabled":"disabled"}).html("上天帮你算出饭馆，无法改动！");
+    });
+</script>
+</html>
