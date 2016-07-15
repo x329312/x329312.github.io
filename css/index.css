@@ -25,6 +25,10 @@ a{
 		margin-left: -75px;
 
 	}
+	#loading-center-absolute > h4{
+		padding-top:70px;
+		color:#fff;
+	}
 	.object{
 		width: 8px;
 		height: 50px;
