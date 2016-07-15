@@ -31,6 +31,21 @@
 </head>
 
 <body>
+    <div id="loading">
+			<div id="loading-center">
+				<div id="loading-center-absolute">
+					<div class="object" id="object_one"></div>
+					<div class="object" id="object_two"></div>
+					<div class="object" id="object_three"></div>
+					<div class="object" id="object_four"></div>
+					<div class="object" id="object_five"></div>
+					<div class="object" id="object_six"></div>
+					<div class="object" id="object_seven"></div>
+					<div class="object" id="object_eight"></div>
+					<div class="object" id="object_big"></div>
+				</div>
+			</div>
+		</div>
 
 <div class="navbar navbar-default topdex">
     <div class="container">
@@ -327,7 +342,12 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
 <script>
-
+$(window).load(function() {
+				//$("#loading").delay(2000).fadeOut(500);
+				//$("#loading-center").click(function() {
+				$("#loading").fadeOut(500);
+				//})
+			})
 setTimeout(function(){
     $("h1").fadeIn(3000);
 },2000);
