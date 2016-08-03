@@ -1,0 +1,572 @@
+/**
+ * Created by _Nomo on 2016/8/1.
+ */
+*{
+    padding:0;
+    margin:0;
+}
+.cp{
+    cursor: pointer;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.bg{
+    background: url("../img/BG.png");
+    width: 100%;
+    height: 800px;
+}
+.bg>img{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.logo-0{
+    transform: rotateY(0deg);
+    transition: transform 1.5s linear;
+}
+.next-d{
+    -webkit-animation: myfirst 2s linear 1s infinite;
+    -o-animation: myfirst 2s linear 1s infinite;
+    animation:myfirst 2s linear 1s infinite;
+    display: block;
+    margin-top: 50px;
+    color: #999;
+    width: 45px;
+    height: 45px;
+    padding-top: 2px;
+    padding-left: 8px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.next-d:hover{
+    color: #999;
+}
+
+/*悬浮动画*/
+@keyframes myfirst
+{
+    0%   {margin-top: 50px;}
+    25%   {margin-top: 60px;}
+    50%   {margin-top: 70px;}
+    75%   {margin-top: 60px;}
+    100%   {margin-top: 50px;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+    0%   {margin-top: 50px;}
+    25%   {margin-top: 60px;}
+    50%   {margin-top: 70px;}
+    75%   {margin-top: 60px;}
+    100%   {margin-top: 50px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+    0%   {margin-top: 50px;}
+    25%   {margin-top: 60px;}
+    50%   {margin-top: 70px;}
+    75%   {margin-top: 60px;}
+    100%   {margin-top: 50px;}
+}
+
+
+/*nav*/
+.navbar-brand{
+    padding:4px 0 0 10px;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.navbar-default{
+    background: rgba(248, 248, 248, 0);
+    border-color: transparent;
+    height: 60px;
+    transition: all 0.3s linear;
+}
+.nav>li{
+    text-align: right;
+}
+.nav>li:first-child>a{
+    letter-spacing:3px;
+}
+.nav > li >a{
+    padding-top: 20px;
+    height: 60px;
+    font-size: 15px;
+    font-family: Microsoft YaHei;
+}
+.navbar-default .navbar-toggle{
+    border-color: #ccc;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background-color: rgba(204, 204, 204, 0.45);
+}
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{
+    max-height: 440px;
+    /*background: #F8F8F8;*/
+}
+
+/*nav end*/
+
+/*section*/
+/*one*/
+.section-one{
+    width:100%;
+    height: 460px;
+    padding-top: 10px;
+    background-color: #fa7564;
+}
+.one-bg{
+    width:100%;
+    height: 450px;
+    padding-top: 10px;
+    background: url("../img/line.png")no-repeat right;
+}
+
+.one-bg>.container>h1{
+    font-family: "Microsoft JhengHei UI";
+    font-weight: bold;
+    color: #fff;
+    text-decoration: underline;
+}
+.one-bg>.container{
+    padding-top: 70px;
+    padding-left: 0;
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+
+.text-p{
+    margin-top: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+}
+.text-p>p{
+    margin-bottom: 5px;
+}
+/*tow*/
+.section-2{
+    padding-top: 40px;
+}
+.text-2{
+    padding:90px 50px 0 0;
+    font-family: "Microsoft YaHei";
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+.text-3{
+    font-family: "Microsoft YaHei";
+    padding:160px 0 0 50px;
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+.text-2 >h3,.text-3 >h3{
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+}
+.text-2 > span,.text-3 > span{
+    font-size: 15px;
+    color: #777;
+    line-height: 25px;
+}
+/*three*/
+.section-3{
+    background: #f5f5f5;
+    width:100%;
+    margin-top: 40px;
+}
+.pic{
+    padding-left: 90px;
+}
+.pic>ul>li{
+    padding:0;
+    margin:0;
+    vertical-align:bottom;
+}
+.gray{
+    transition:all 0.3s linear;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.gray:hover{
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+/*four*/
+.pad-4{
+    padding-left: 80px;
+}
+.section-4{
+    background: url("../img/pen-1.png") no-repeat left bottom;
+    height: 410px;
+}
+.four-bg{
+    background: url("../img/pen-2.png") no-repeat left bottom;
+    height: 410px;
+    font-family: "Microsoft YaHei";
+    padding:40px 90px 0 0;
+    background-position-y: 200px;
+    transition: all 1s linear;
+}
+.text-4{
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+.text-4>h3{
+    color: #ffaa00;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.text-4>p{
+    color: #777;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+/*five*/
+.section-5{
+    background: #0e5686;
+    min-height: 250px;
+}
+.five-bg{
+    background: url("../img/blue.png") no-repeat;
+    height: 250px;
+    padding-top: 90px;
+    background-position: left;
+    transition: all 0.8s linear;
+}
+.five-bg>p{
+    color: #fff;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+}
+/*six*/
+.section-6{
+    padding-top: 40px;
+}
+.section-6>h3{
+    font-family: "Microsoft YaHei";
+    color: #555;
+    font-weight: bold;
+}
+.line-2{
+    height: 6px;
+    width: 100%;
+    background: url("../img/line-2.png");
+}
+.section-6>ul{
+    margin-top: 20px;
+}
+.section-6>ul>li{
+    border-right: 1px solid #ccc;
+}
+.section-6>ul>li:last-child{
+    border-right: 0 solid #ccc;
+}
+.section-6>ul>li>a{
+    color: #777;
+    font-family: "Microsoft YaHei";
+    display: block;
+    min-width: 50px;
+    text-align: center;
+}
+.section-6>ul>li>a:hover{
+    text-decoration: none;
+}
+.section-6>.row>.col-sm-4{
+    font-family: "Microsoft YaHei";
+    color: #555;
+}
+.up-shadow{
+    transition: all 0.3s linear;
+    margin-top: 20px;
+}
+.up-shadow:hover{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 20px rgba(0,0,0,.3);
+    /*padding: 10px 10px 2px 10px;*/
+
+}
+.quany{
+    width:100%;
+    height: 328px;
+    background: url("../img/quany-1.png") no-repeat center;
+    transition: all 0.3s linear;
+}
+.up-shadow:hover .quany{
+    background: url("../img/quany.png") no-repeat center;
+}
+.luzhou{
+    width:100%;
+    height: 328px;
+    background: url("../img/luzhou-1.png") no-repeat center;
+    transition: all 0.3s linear;
+}
+.up-shadow:hover .luzhou{
+    background: url("../img/luzhou.jpg") no-repeat center;
+}
+.baiyao{
+    width:100%;
+    height: 328px;
+    background: url("../img/baiyao-1.png") no-repeat center;
+    transition: all 0.3s linear;
+}
+.up-shadow:hover .baiyao{
+    background: url("../img/baiyao.jpg") no-repeat center;
+}
+
+.up-text{
+    padding: 0 10px 2px 20px;
+}
+
+.search{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background:rgba(0,0,0,.5);
+    left:50%;
+    margin-left: -50px;
+    margin-top: 7.5em;
+    line-height: 120px;
+    color: #eee;
+}
+.up-shadow:hover .search{
+    display: block;
+}
+
+/*brand*/
+.h-banner{
+    margin-top: 50px;
+}
+.brand{
+    padding-left: 30px;
+}
+.brand>li{
+    width:16%;
+}
+.brand>li>a>img{
+    opacity: .4;
+    transition: all 0.3s linear;
+}
+.brand>li>a>img:hover{
+    opacity: 1;
+}
+.carousel-indicators{
+    bottom: -20px;
+}
+.carousel-indicators li{
+    background: #777;
+    width: 20px;
+    height: 7px;
+    border-radius: 0;
+    margin:0;
+}
+.carousel-indicators .active{
+    background: #aaa;
+    width: 20px;
+    height: 6px;
+    border-radius: 0;
+}
+
+/*Partner*/
+.partner{
+    background: #eaeaea;
+    margin-top: 100px;
+    padding-bottom: 40px;
+}
+.partner h3{
+    color: #555;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    margin: 40px 0 40px 0;
+}
+.partner ul>li{
+    width:15%;
+}
+
+/*footer*/
+.footer{
+    min-height: 400px;
+    background: url("../img/footer-bg.png");
+    color: #fff;
+    padding-top: 40px;
+    font-family: "Microsoft YaHei";
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.foot-line{
+    border-top: 2px solid #666;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.footer ul>li{
+    line-height: 25px;
+    font-size: 13px;
+}
+.footer-2{
+    height: 115px;
+    background: url("../img/footer-bg-2.png");
+    color: #777;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 30px;
+}
+.footer-2 p{
+    margin: 0;
+}
+.footer-2 ul>li{
+    vertical-align: middle;
+    max-width: 50%;
+}
+.footer-2 ul>li:first-child{
+    background: url("../img/po.png") repeat-y right;
+}
+
+.right{
+    float: right;
+    margin-top: -45px;
+}
+
+
+/*map*/
+#jazh-map{
+    width:100%;
+    height: 280px;
+    margin-top: 20px;
+}
+.big-map{
+    position: absolute;
+    top: 20px;
+    right: 14px;
+    cursor: pointer;
+}
+
+
+/*side*/
+.side{
+    position: fixed;
+    left: 50%;
+    margin-left: 620px;
+    bottom: 50px;
+    width: 72px;
+    height: 72px;
+    background: url("../img/top_icon.png");
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+.side:hover{
+    background-position-y: 72px;
+}
+
+
+
+
+
+@media screen and (max-width: 767px){
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{
+        background: #F8F8F8;
+        margin-top: 10px;
+    }
+    .one-bg>.container{
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    .text-2 {
+        padding: 40px 15px 0 15px;
+        opacity: 1;
+    }
+    .text-3 {
+        padding: 40px 5px 15px 20px;
+        opacity: 1;
+    }
+    .pic {
+         padding-left: 0;
+    }
+    .section-3{
+        margin-bottom: 20px;
+    }
+    .four-bg{
+        padding: 0 5px 0 15px;
+        background: transparent;
+    }
+    .pad-4{
+        padding-left: 5px;
+    }
+    .text-4{
+        opacity: 1;
+    }
+    .five-bg{
+        padding: 55px 15px 0 15px;
+    }
+    .five-bg{
+        background-position: center;
+    }
+    .brand>li {
+        width: 15%;
+    }
+    .footer-2 p {
+        font-size: 12px;
+    }
+    .one-bg>.container{
+        opacity: 1;
+        padding-left: 70px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 999px){
+    .section-one{
+        height: 430px;
+    }
+    .text-2 {
+        padding: 0 50px 0 0;
+        opacity: 1;
+    }
+    .text-3{
+        padding: 20px 0 0 50px;
+        opacity: 1;
+    }
+    .four-bg{
+        padding: 10px 50px 0 0;
+    }
+    .text-4{
+        opacity: 1;
+    }
+    .four-bg{
+        background-position-y: 140px;
+    }
+    .five-bg{
+        background-position: center;
+    }
+    .one-bg>.container{
+        opacity: 1;
+        padding-left: 70px;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1366px){
+    .bg>img{
+        height: 250px;
+    }
+    .side{
+        margin-left: 580px;
+    }
+    .footer ul>li{
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 1367px) and (max-width: 1601px){
+    .bg>img{
+        height: 320px;
+    }
+}
