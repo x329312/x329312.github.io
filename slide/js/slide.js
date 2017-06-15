@@ -11,7 +11,7 @@ $(document).ready(function () {
 	// 动画执行速度
 	var animSpd = 750; // Change also in CSS
 	// 拉伸多少距离后 切换下一张
-	var distOfLetGo = winW * 0.1;
+	var distOfLetGo = winW * 0.2;
 	// 默认起始页
 	var curSlide = 1;
 	// 开启动画
