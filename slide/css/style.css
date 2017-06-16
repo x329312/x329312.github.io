@@ -266,12 +266,6 @@ body {
 
 
 
-@media screen and (max-width: 400px) {
-  .nav_slide {
-      width: 22px;
-      height: 22px;
-    }
-}
 
 @media screen and (max-width: 767px) {
   .nav{
